@@ -6,8 +6,9 @@
 </br>
 
 <div align="center">
-  <img alt="To-DoList | Desktop" src="img/Desktop.png" width="650" align="left">
-  <img alt="To-DoList | Phone" src="img/Phone.png" width="300">
+  <img alt="To-DoList | Desktop" src="img/Desktop.png" width="800px">
+  </br>
+  <img alt="To-DoList | Phone" src="img/Phone.png" width="350px">
 </div>
 
 
