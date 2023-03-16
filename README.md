@@ -1,13 +1,27 @@
-# 📝 Lista De Tareas.
+## ✨Project preview
+
+<h1 align="center">📝Lista De Tareas.</h1>
+
+</br>
+</br>
+
+<div align="center">
+  <img alt="To-DoList | Desktop" src="img/Desktop.png" width="650" align="left">
+  <img alt="To-DoList | Phone" src="img/Phone.png" width="300">
+</div>
+
+
+</br>
+</br>
+
+***
+
+</br>
+</br>
 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Project preview
-
-<img alt="To-DoList | Desktop" src="img/Desktop.png" width="500">
-<img alt="To-DoList | Phone" src="img/Phone.png" width="500">
 
 ## Available Scripts
 
