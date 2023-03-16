@@ -1,11 +1,8 @@
 'use strict';
 
-// abrir conexion con el sotware sqlite
 import { open } from 'sqlite';
 import driver from 'sqlite3';
 
-// SQLite tiene la perticularida que toda la informacion la guarda en un solo archivo
-// Funcion para poder acceder a la base de datos, o regresara la bd
 // Conectando a la base de datos
 export const getDBConnection = async function () {
   try {
