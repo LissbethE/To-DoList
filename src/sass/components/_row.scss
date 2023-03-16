@@ -1,0 +1,126 @@
+.row {
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+    // height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+
+    @include respond(bp-700) {
+      flex-direction: column;
+      padding-left: 0;
+
+      & > .paragraph {
+        padding: 1.5rem;
+      }
+
+      & > * > .heading-2 {
+        padding: 1.3rem 0;
+      }
+    }
+  }
+
+  &__icon-box {
+    //height: 100%;
+    align-self: stretch;
+    display: flex;
+    overflow: hidden;
+    padding-left: 1.5rem;
+
+    background-image: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 50%,
+      rgba(255, 84, 17, 1) 100%
+    );
+
+    @include respond(bp-700) {
+      background: none;
+      flex-grow: 1;
+      padding-left: 0rem;
+    }
+
+    @include respond(smallPhone) {
+      overflow-x: auto;
+    }
+  }
+
+  &__icon {
+    height: 100%;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    transform: skewX(-10deg);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      transform: skewX(-10deg) scaleX(1.2);
+    }
+
+    @include respond(bp-700) {
+      height: 1rem;
+      flex-grow: 1;
+      padding: none;
+      transform: skewX(0deg);
+
+      &:hover {
+        transform: skewX(0deg) scaleX(1.2);
+      }
+    }
+
+    &:nth-child(1) {
+      background-image: $gd-blue;
+    }
+    &:nth-child(2) {
+      background-image: $gd-purple;
+    }
+    &:nth-child(3) {
+      background-image: $gd-pink;
+    }
+    &:nth-child(4) {
+      background-image: $gd-orange;
+    }
+
+    & > * {
+      display: block;
+      font-size: 2rem;
+      transform: skewX(10deg);
+
+      @include respond(bp-700) {
+        transform: skewX(0deg);
+        // font-size: 1.8rem; // 1.8
+      }
+    }
+  }
+
+  &__icon.active > &__arrow-icon {
+    transform: rotate(180deg);
+  }
+
+  &__description {
+    padding: 1.5rem;
+    border-top: 0.1rem solid $color-white;
+
+    @include respond(bp-700) {
+      border-top: none;
+    }
+  }
+
+  &__text {
+    color: $color-orange;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+  }
+}

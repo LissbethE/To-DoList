@@ -1,0 +1,64 @@
+// Color
+$color-orange: #ff5411;
+$color-orange-dark: #b63a09; //#5d0594fe
+
+$gd-purple: linear-gradient(
+  90deg,
+  rgba(93, 12, 255, 1) 0%,
+  rgba(155, 0, 250, 1) 100%
+);
+
+$gd-orange: linear-gradient(
+  90deg,
+  rgba(255, 118, 20, 1) 0%,
+  rgba(255, 84, 17, 1) 100%
+);
+
+$gd-pink: linear-gradient(
+  90deg,
+  rgba(255, 12, 241, 1) 0%,
+  rgba(250, 0, 135, 1) 100%
+);
+
+$gd-blue: linear-gradient(
+  90deg,
+  rgba(20, 159, 255, 1) 0%,
+  rgba(17, 122, 255, 1) 100%
+);
+
+/*$gradient: linear-gradient(
+  to left top,
+  #fffb2b,
+  #ffd400,
+  #ffac00,
+  #ff8200,
+  #ff5411
+);*/
+
+$gradient: linear-gradient(
+  to left top,
+  #ff5411,
+  #f77d00,
+  #e9a000,
+  #d4bf00,
+  #badb00,
+  #89de4c,
+  #56de78,
+  #00da9d,
+  #00b8c1,
+  #0091e5,
+  #0062e7,
+  #0416b3
+);
+
+$color-white: #fff;
+
+///////////////////////////////////
+// FONT VARIABLES
+$fontZise: 62.5%;
+
+$font-primary: 'Urbanist', sans-serif;
+$font-secondary: 'Euphoria Script', cursive;
+
+$font-size-default: 1.6rem;
+$letter-spacing-small: 0.2rem;

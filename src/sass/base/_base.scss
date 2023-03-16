@@ -1,0 +1,93 @@
+html {
+  font-size: $fontZise;
+
+  ///////////////////////////////////
+  // if width <= 900px
+  @include respond(tab-portrait) {
+    font-size: 56.25%; // 9px
+  }
+
+  // width <= 600
+  @include respond(phone) {
+    font-size: 50%; // 8px
+  }
+
+  // if width <= 400px
+  @include respond(smallPhone) {
+    font-size: 43.75%; // 7px
+  }
+
+  // width >= 1800px
+  @include respond(big-desktop) {
+    font-size: 100%; // 16px
+  }
+
+  ///////////////////////////////////
+  /* Scroll Smoothly */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100vh;
+
+  background-image: $gradient;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  animation: gradient 10s infinite ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: $color-orange;
+  color: $color-white;
+}
+
+/////////////////////
+
+#root {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(break-400) {
+    height: 100%;
+  }
+}
+
+.todo {
+  width: 70%;
+  min-height: 35rem;
+  margin: 3rem;
+
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15)
+  );
+  -webkit-backdrop-filter: blur(2.1rem);
+  backdrop-filter: blur(2.1rem);
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 70%;
+
+  @include respond(tab-portrait) {
+    width: 100%;
+  }
+
+  @include respond(break-400) {
+    margin: 0;
+    min-height: 100%;
+  }
+}
